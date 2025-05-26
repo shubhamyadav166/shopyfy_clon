@@ -2,14 +2,15 @@ import React from 'react'
 import { createContext } from 'react'
 import App from '../App'
 import { all_product } from '../assets/all_product.js'
-export const context = createContext()
+export const data = createContext()
 
 const ShopContext = () => {
-    const allProduct = { all_product }
+    console.log(data)
+
     return (
-        <context.Provider value={allProduct}>
+        <data.Provider value={all_product}>
             <App />
-        </context.Provider>
+        </data.Provider>
     )
 }
 
