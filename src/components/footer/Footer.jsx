@@ -15,7 +15,7 @@ const Footer = () => {
 
       <ul className='flex gap-12 text-xl  '>
         <li><Link to="/about">About</Link></li>
-        <li> <Link to="/product">Products</Link></li>
+        <li> <Link to="/">Products</Link></li>
         <li><Link to="/offices">Offices</Link></li>
         <li><Link to="/company">Company</Link></li>
         <li><Link to="/contact">Contact</Link></li>
