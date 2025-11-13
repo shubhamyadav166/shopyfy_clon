@@ -5,7 +5,6 @@ import './App.css'
 import Navbar from './components/navbar/Navbar'
 import Shop from './pages/Shop'
 import Product from './pages/Product'
-import Cart from './pages/Cart'
 import LoginSignup from "./pages/LoginSignup";
 import Footer from "./components/footer/Footer";
 import ShopCategory from "./pages/ShopCategory";
@@ -23,9 +22,9 @@ function App() {
         <Route path="/men" element={<ShopCategory banner={men_banner} category="men" />} />
         <Route path="/women" element={<ShopCategory banner={women_banner} category="women" />} />
         <Route path="/kids" element={<ShopCategory banner={kids_banner} category="kid" />} />
-        <Route path="/product" element={<Product />} />
+
         <Route path=":productId" element={<Product />} />
-        <Route path="/cart" element={<Cart />} />
+
         <Route path="/login" element={<LoginSignup />} />
       </Routes>
       <Footer />
